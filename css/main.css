@@ -1,0 +1,166 @@
+/*
+Challenge by Frontend Mentor. 
+Coded by @codederk.
+*/
+:root {
+  --color-primary-01: hsl(185, 75%, 39%);
+  --color-primary-02: hsl(229, 23%, 23%);
+  --color-primary-03: hsl(227, 10%, 46%);
+  --color-main-background: hsl(185, 75%, 39%);
+  --color-main-paragraph: hsl(227, 10%, 46%);
+  --color-white: hsl(0, 0%, 95%);
+  --color-gray: hsl(0, 0%, 59%);
+  --body-font-family: Kumbh Sans, sans-serif;
+  --body-font-size: 1rem;
+  --body-font-weight: 400;
+  --body-line-height: 1.5;
+  --body-bg-color: hsl(185, 75%, 39%);
+  --body-color: hsl(227, 10%, 46%);
+  --font-small: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+  background-color: var(--color-main-background);
+  background-size: cover;
+  color: var(--body-color);
+  display: flex;
+  height: 100vh;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  margin: 0;
+  color: var(--color-primary-02);
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--color-main-paragraph);
+}
+
+a {
+  background-color: transparent;
+}
+
+small,
+.small {
+  font-size: var(--font-small);
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+body::before {
+  content: "";
+  background-image: url("../images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 500px) calc(50% - 400px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -999;
+}
+
+body::after {
+  content: "";
+  background-image: url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 500px) calc(50% + 460px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -999;
+}
+
+.card {
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  max-width: 350px;
+}
+
+@media screen and (max-width: 380px) {
+  .card {
+    width: 326px;
+  }
+}
+.card-img {
+  position: relative;
+}
+.card-img .pattern-img {
+  max-width: 100%;
+}
+.card-img .profile-img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -60px);
+  border-radius: 50%;
+  border: 6px solid var(--color-white);
+}
+
+.card-body {
+  padding: 72px 0 24px;
+}
+.card-body .card-header {
+  font-size: 18px;
+  font-family: 700;
+}
+.card-body .card-header span {
+  font-weight: 400;
+  color: var(--color-gray);
+}
+.card-body hr {
+  height: 1px;
+  background-color: var(--color-gray);
+  border: none;
+  opacity: 0.2;
+  margin: 24px 0;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+.card-stats .stat {
+  flex: 1;
+}
+.card-stats .stat h1 {
+  font-size: 18px;
+  line-height: 18px;
+}
+.card-stats .stat small {
+  letter-spacing: 2px;
+}

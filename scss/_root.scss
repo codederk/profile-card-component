@@ -1,0 +1,21 @@
+:root {
+  // Colors
+  --color-primary-01: #{$color-primary-01};
+  --color-primary-02: #{$color-primary-02};
+  --color-primary-03: #{$color-primary-03};
+
+  --color-main-background: #{$color-main-background};
+  --color-main-paragraph: #{$color-main-paragraph};
+  --color-white: #{$color-white};
+  --color-gray: #{$color-gray};
+
+  // Body
+  --body-font-family: #{$body-font-family};
+  --body-font-size: #{$body-font-size};
+  --body-font-weight: #{$body-font-weight};
+  --body-line-height: #{$body-line-height};
+  --body-bg-color: #{$body-bg-color};
+  --body-color: #{$body-color};
+
+  --font-small: #{$font-small};
+}

@@ -1,0 +1,20 @@
+// Color Variables
+$color-main-background: hsl(185, 75%, 39%); // Dark Cyan
+$color-main-paragraph: hsl(227, 10%, 46%); // Dark Gray
+$color-white: hsl(0, 0%, 95%);
+$color-gray: hsl(0, 0%, 59%); // Dark Gray
+$color-primary-01: hsl(185, 75%, 39%); // Dark Cyan
+$color-primary-02: hsl(229, 23%, 23%); // Dark Saturated Blue
+$color-primary-03: hsl(227, 10%, 46%); // Dark Grayish Blue
+
+// Body
+$body-font-family: "Kumbh Sans", sans-serif;
+
+$body-font-size: 1rem;
+$body-font-weight: 400;
+$body-line-height: 1.5;
+$body-bg-color: $color-main-background;
+$body-color: $color-main-paragraph;
+
+// Text
+$font-small: 10px;
